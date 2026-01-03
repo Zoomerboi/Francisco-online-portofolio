@@ -19,17 +19,17 @@ function Navbar() {
 
       <ul className="hidden md:flex items-center gap-10 text-sm font-bold tracking-[0.2em] opacity-90">
         <li>
-          <Link to="/" className="inline-block hover:text-blue-500 hover:scale-120 transition-all">HOME</Link>
+          <Link to="/" className="inline-block text-xl hover:text-blue-500 hover:scale-120 transition-all">HOME</Link>
         </li>
         <li>
-          <Link to="/projects" className="inline-block hover:text-blue-500 hover:scale-120 transition-all">PROJECTS</Link>
+          <Link to="/projects" className="inline-block text-xl hover:text-blue-500 hover:scale-120 transition-all">PROJECTS</Link>
         </li>
       </ul>
 
       <div className="flex items-center gap-6">
         <Link 
           to="/contact" 
-          className="hidden lg:inline-block ml-4 px-6 py-2 border border-blue-500 text-blue-500 text-xs font-black uppercase tracking-widest hover:bg-blue-500 hover:text-white hover:scale-120 transition-all"
+          className="hidden lg:inline-block ml-4 px-6 py-2 border border-blue-500 text-blue-500 text-l font-black uppercase tracking-widest hover:bg-blue-500 hover:text-white hover:scale-120 transition-all"
         >
           Contact Me!
         </Link>
