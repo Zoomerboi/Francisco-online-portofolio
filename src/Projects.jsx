@@ -16,7 +16,7 @@ function Projects() {
       <section className="relative z-10 py-20 px-8 max-w-5xl mx-auto flex flex-col gap-12">
 
         <a 
-          href="/Francisco-vite-projectV2.zip" 
+          href="Francisco-vite-projectV2.zip" 
           download 
           className="p-10 border border-neutral-800 bg-neutral-950/70 hover:border-blue-500 active:scale-120 transition-all rounded-2xl"
         >
@@ -32,7 +32,7 @@ function Projects() {
         </a>
 
         <a 
-          href="/inprola-finals-main 1.zip" 
+          href="inprola-finals-main 1.zip" 
           download 
           className="p-10 border border-neutral-800 bg-neutral-950/70 hover:border-blue-500 active:scale-120 transition-all rounded-2xl"
         >
@@ -48,7 +48,7 @@ function Projects() {
         </a>
 
         <a 
-          href="/Todolist.py" 
+          href="Todolist.py" 
           download 
           className="p-10 border border-neutral-800 bg-neutral-950/70 hover:border-blue-500 active:scale-120 transition-all rounded-2xl"
         >
@@ -64,7 +64,7 @@ function Projects() {
         </a>
 
         <a 
-          href="/DESALGOFINALS-paper-Anciro-Francisco-Paje(finaloutput) (1).pdf" 
+          href="DESALGOFINALS-paper-Anciro-Francisco-Paje(finaloutput) (1).pdf" 
           download 
           className="p-10 border border-neutral-800 bg-neutral-950/70 hover:border-blue-500 active:scale-120 transition-all rounded-2xl"
         >
@@ -80,7 +80,7 @@ function Projects() {
         </a>
 
         <a 
-          href="/BarangayTaskManager.zip" 
+          href="BarangayTaskManager.zip" 
           download 
           className="p-10 border border-neutral-800 bg-neutral-950/70 hover:border-blue-500 active:scale-120 transition-all rounded-2xl"
         >
