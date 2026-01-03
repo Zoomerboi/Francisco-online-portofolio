@@ -4,7 +4,7 @@ function Projects() {
   return (
     <div 
       className="bg-neutral-950 min-h-screen text-white relative bg-fixed bg-cover bg-center"
-      style={{ backgroundImage: "url('/download (3).jpg')" }} 
+      style={{ backgroundImage: "url('download (3).jpg')" }} 
     >
       <div className="absolute inset-0 bg-black/75"></div>
       <section className="relative z-10 pt-32 pb-16 px-8 max-w-5xl mx-auto border-b border-neutral-600">

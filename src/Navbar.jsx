@@ -8,7 +8,7 @@ function Navbar() {
       
       <div className="flex items-center gap-3">
         <img 
-          src="/ME.jpg" 
+          src="ME.jpg" 
           alt="Logo" 
           className="w-10 h-10 rounded-full object-cover border border-gray-700"
         />

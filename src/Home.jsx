@@ -25,7 +25,7 @@ function Home() {
 
           <div>
             <img 
-              src="/francisco.png" 
+              src="francisco.png" 
               alt="Ethan"
               className="h-[50vh] md:h-[70vh] w-auto object-contain drop-shadow-2xl grayscale-[40%]"
             />
@@ -44,7 +44,7 @@ function Home() {
 
       <section 
         className="min-h-screen flex items-center justify-center bg-blue-900 bg-fixed bg-cover bg-center px-8 py-24"
-        style={{ backgroundImage: "url('/weh.jpg')" }} 
+        style={{ backgroundImage: "url('weh.jpg')" }} 
       >
         <div className="max-w-4xl text-center bg-black/40 backdrop-blur-md p-12 rounded-3xl border border-white/10">
           <h3 className="text-5xl font-black text-white mb-6 uppercase tracking-tighter">
