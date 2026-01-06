@@ -4,8 +4,11 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 
 function Navbar() {
   return (
+    // Navigation Container: Sticky positioning keeps the bar at the top during scroll. 
+    // z-50 ensures it stays above all other background elements and orbs.
     <nav className="flex items-center justify-between px-12 py-6 text-white bg-neutral-950 sticky top-0 z-50">
-      
+
+      {/* Brand Section: Combines a circular profile image with the name link */}
       <div className="flex items-center gap-3">
         <img 
           src="ME.jpg" 
@@ -16,7 +19,8 @@ function Navbar() {
           Ethan Francisco
         </Link>
       </div>
-
+      
+      {/* Main Navigation Links: Hidden on mobile (hidden) and displayed on medium screens and up (md:flex) */}
       <ul className="hidden md:flex items-center gap-10 text-sm font-bold tracking-[0.2em] opacity-90">
         <li>
           <Link to="/" className="inline-block text-lg hover:text-blue-500 hover:scale-120 transition-all">HOME</Link>

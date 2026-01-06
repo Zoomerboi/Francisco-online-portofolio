@@ -4,16 +4,20 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div className="bg-neutral-950">
-      
+      {/* HERO SECTION: The introduction area with large background typography and profile imagery */}
       <section className="relative p-18 pb-40 flex items-center justify-center px-4 overflow-hidden">
 
+        {/* Big Background Text: Positioned behind everything else as a decorative "watermark" */}
         <div className="absolute inset-0 flex items-center justify-center select-none pointer-events-none">
           <h1 className="text-[15vw] font-black text-neutral-900 tracking-tighter uppercase">
             PORTFOLIO
           </h1>
         </div>
 
+        {/* Foreground Content: Responsive flex container for bio and photo */}
         <div className="z-10 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12">
+
+          {/* Bio Intro - Right aligned on desktop */}
           <div className="text-right text-white text-lg mb-1 max-w-[300px]">
             <h2 className="text-blue-400 font-bold tracking-widest uppercase text-lg mb-2">
               Ethan Edgar B. Francisco
@@ -23,6 +27,7 @@ function Home() {
             </p>
           </div>
 
+          {/* Portrait Image: Centered with a subtle grayscale filter for a professional look */}
           <div>
             <img 
               src="francisco.png" 
@@ -31,6 +36,7 @@ function Home() {
             />
           </div>
 
+          {/* Quick Facts - Left aligned on desktop */}{/* Quick Facts - Left aligned on desktop */}
           <div className="text-left max-w-[300px] order-3 text-white text-lg mb-10">
             <h2 className="text-blue-400 font-bold tracking-widest uppercase text-lg mb-2">
               About Me:
@@ -42,10 +48,12 @@ function Home() {
         </div>
       </section>
 
+      {/* PHILOSOPHY SECTION: Uses a fixed background image to create a parallax scrolling effect */}
       <section 
         className="min-h-screen flex items-center justify-center bg-blue-900 bg-fixed bg-cover bg-center px-8 py-24"
         style={{ backgroundImage: "url('weh.jpg')" }} 
       >
+        {/* Glassmorphism Card: Semi-transparent black background with background blur */}
         <div className="max-w-4xl text-center bg-black/40 backdrop-blur-md p-12 rounded-3xl border border-white/10">
           <h3 className="text-5xl font-black text-white mb-6 uppercase tracking-tighter">
             My Philosophy
@@ -59,16 +67,19 @@ function Home() {
           </p>
         </div>
       </section>
-      
+
+      {/* SKILLS SECTION: Displays technical expertise in a 4-column grid with interactive hover states */}
       <section className="flex flex-col items-center justify-center pt-50 pb-75 relative overflow-hidden bg-black">
+        {/* Background Grid Pattern: Creates a tech/blueprint aesthetic */}
         <div className="absolute inset-0 opacity-10 [background-image:linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] [background-size:40px_40px]"></div>
-        
+        {/* Ambient Glow: Large blurred circles to add color and depth to the dark theme */}
         <div className="absolute top-1/4 -left-20 w-96 h-96 bg-blue-500/30 rounded-full blur-[140px]"></div>
         <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-blue-600/20 rounded-full blur-[140px]"></div>
         
         <h2 className="relative z-10 text-6xl text-white font-black uppercase mb-12">Skills</h2>
         
         <div className="relative z-10 grid grid-cols-4 gap-8">
+          {/* Skill Tags: Each box turns blue on hover*/}
           <div className="px-8 py-4 border border-neutral-700 text-white font-bold uppercase tracking-widest hover:bg-blue-500 transition-all cursor-default">Python</div>
           <div className="px-8 py-4 border border-neutral-700 text-white font-bold uppercase tracking-widest hover:bg-blue-500 transition-all cursor-default">React</div>
           <div className="px-8 py-4 border border-neutral-700 text-white font-bold uppercase tracking-widest hover:bg-blue-500 transition-all cursor-default">Tailwind</div>
@@ -79,12 +90,13 @@ function Home() {
           <div className="px-8 py-4 border border-neutral-700 text-white font-bold uppercase tracking-widest hover:bg-blue-500 transition-all cursor-default">Linux</div>
         </div>
       </section>
-
+      {/* CREDENTIALS SECTION: List of academic and professional certifications */}
       <section className="flex flex-col items-center justify-center pb-80 relative overflow-hidden bg-black">
         <div className="absolute inset-0 opacity-10 [background-image:linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] [background-size:40px_40px]"></div>
         
         <h2 className="relative z-10 text-6xl text-white font-black uppercase mb-12">Credentials</h2>
-        
+
+        {/* Credentials Grid: 2-column layout for certificates and education info */}
         <div className="relative z-10 grid grid-cols-2 gap-8 w-full max-w-6xl px-4">
           <div className="p-10 border border-neutral-800 bg-neutral-900/40 backdrop-blur-sm">
             <span className="text-blue-400 font-bold uppercase tracking-widest text-sm">Education</span>

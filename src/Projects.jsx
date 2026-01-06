@@ -2,19 +2,26 @@ import React from 'react';
 
 function Projects() {
   return (
+    // Main Container: Uses a fixed background image with 'bg-fixed' to create a parallax effect
     <div 
       className="bg-neutral-950 min-h-screen text-white relative bg-fixed bg-cover bg-center"
       style={{ backgroundImage: "url('download (3).jpg')" }} 
     >
+
+      {/* Overlay: A dark tint over the background image to ensure text remains readable */}
       <div className="absolute inset-0 bg-black/75"></div>
+
+      {/* Page Header: Positioned relatively to sit above the background overlay */}
       <section className="relative z-10 pt-32 pb-16 px-8 max-w-5xl mx-auto border-b border-neutral-600">
         <h2 className="text-6xl font-black uppercase tracking-tighter">
           My Projects
         </h2>
       </section>
 
+      {/* Projects List: A vertical stack of project "cards" */}
       <section className="relative z-10 py-20 px-8 max-w-5xl mx-auto flex flex-col gap-12">
 
+        {/* The 'download' attribute allows users to save the file directly when clicking the card */}
         <a 
           href="Francisco-vite-projectV2.zip" 
           download 

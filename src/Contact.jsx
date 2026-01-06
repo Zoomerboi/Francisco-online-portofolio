@@ -1,18 +1,26 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Linkedin, Github, Instagram, Facebook } from 'lucide-react';
+import { MapPin, Phone, Mail, Linkedin, Github, Instagram, Facebook } from 'lucide-react'; //Icons for the contact links
 
 function Contact() {
   return (
+    // Main wrapper: Sets the dark theme, full height, and handles center alignment of the content
     <div className="min-h-screen bg-neutral-950 text-white p-8 md:p-20 flex items-center justify-center relative overflow-hidden">
 
+      {/* Pulsing glow effect */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[150px] animate-pulse pointer-events-none"></div>
+
+      {/* Decorative background orbs: Uses absolute positioning and high blur for a modern glow effect */}
       <div className="absolute -left-40 w-96 h-96 bg-blue-600/20 rounded-full blur-[150px] pointer-events-none"></div>
       <div className="absolute -right-40 w-96 h-96 bg-purple-600/20 rounded-full blur-[150px] pointer-events-none"></div>
       <div className="absolute right-0 w-80 h-80 bg-red-600/10 rounded-full blur-[120px] pointer-events-none"></div>
 
+      {/* Grid pattern overlay: Subtle CSS-based geometric pattern for texture */}
       <div className="absolute inset-0 opacity-[0.03] [background-image:linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] [background-size:30px_30px] pointer-events-none"></div>
-
+      
+      {/* Main layout container: Splitting the screen into text (left) and info cards (right) */}
       <div className="max-w-6xl w-full grid grid-cols-2 gap-16 z-10">
 
+        {/* Left Section with the text: Large Typography / Heading */}
         <div className="flex flex-col justify-top gap-10">
           <div>
             <h1 className="text-6xl font-black tracking-tighter leading-tight">
@@ -31,8 +39,10 @@ function Contact() {
           </div>
         </div>
 
+        {/* Section: Contact Information Card with Glassmorphism styling */}
         <div className="flex flex-col gap-10 bg-neutral-900/50 p-8 md:p-12 rounded-3xl border border-white/5 backdrop-blur-sm">
 
+          {/* Location details with lucidreact icons used */}
           <div className="flex items-start gap-5">
             <div className="bg-blue-500/10 p-4 rounded-full shrink-0">
               <MapPin className="text-blue-400" size={28} />
@@ -46,6 +56,7 @@ function Contact() {
             </div>
           </div>
 
+          {/* Phone details with lucidreact icons used */}
           <div className="flex items-start gap-5">
              <div className="bg-blue-500/10 p-4 rounded-full">
               <Phone className="text-blue-400" size={28} />
@@ -58,6 +69,7 @@ function Contact() {
             </div>
           </div>
 
+          {/* Email details with lucidreact icons used */}
           <div className="flex items-start gap-5">
              <div className="bg-blue-500/10 p-4 rounded-full">
               <Mail className="text-blue-400" size={28} />
@@ -70,6 +82,7 @@ function Contact() {
             </div>
           </div>
 
+          {/* Social Media Links: Includes hover states and group-hover animations */}
           <div className="pt-4">
             <h3 className="text-xl font-bold mb-6">Follow Me</h3>
 
